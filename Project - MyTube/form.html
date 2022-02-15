@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyTube</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav> 
+    <ul class="navbar">
+      <li><img class="menu_toggle" src="./assets/icons/menu.png" alt="home"><a href="./index.html"></a></li>
+      <li><img src="./assets/icons/home.png" alt="home"><a href="./index.html">Home</a></li>
+      <li><img src="./assets/icons/sport.png" alt="sport"><a href="./pages/collectionOne.html">Sport</a></li>
+      <li><img src="./assets/icons/daily.png" alt="daily driver"><a href="./pages/collectionTwo.html">Daily<br>Driver</a></li>
+      <li><img src="./assets/icons/offroad.png" alt="offroad"><a href="./pages/collectionThree.html">Offroad</a></li>
+    </ul>
+  </nav>
+  <header>
+    <table>
+      <td>
+        <a href="./index.html"><img class="logo" src="./assets/mytube_logo.png" alt="MyTube logo"></a>
+      </td>
+      <td>
+        <input type="text" placeholder="Search.." class="search">
+      </td>
+      <td>
+        <a href="mytube.com/search"><img class="search_button" src="./assets/icons/search.png" alt="search"></a>
+      </td>
+      <td>
+        <button><a href="./form.html">Upload</a></button>
+      </td>
+      <td>
+        <a href="mytube.com/account"><img class="account_img" src="./assets/dio.png" alt=""></a>
+      </td>
+    </table>
+  </header>
+  <h1 class="home_content">Upload Your Own Videos</h1>
+  <form action="" class="upload_form">
+    <label for="title">Title (required)</label><br>
+    <input type="text" id="title"  name="title" placeholder="Enter your title" required size="35">
+    <br><br>
+    <label for="description">Description</label><br>
+    <textarea name="description" id="description" rows="4" cols="35" placeholder="Enter video description"></textarea>
+    <br><br>
+    <label for="listing">Listing type</label><br>
+    <input type="radio" id="public" name="listing">
+    <label for="public">Public</label>
+    <input type="radio" id="private" name="listing">
+    <label for="private">Private</label>
+    <input type="radio" id="unlisted" name="listing">
+    <label for="unlisted">Unlisted</label>
+    <br><br>
+    <label for="restriction">Age Restriction</label><br>
+    <input type="radio" id="yes" name="restriction">
+    <label for="yes">Yes, restrict my video to viewers over 18</label><br>
+    <input type="radio" id="no" name="restriction">
+    <label for="no">No, don't restrict my video to viewers over 18 only</label>
+    <br><br>
+    <label for="license">License</label>
+    <select name="license" id="license">
+      <option value="standard">Standard MyTube License</option>
+      <option value="cc">Creative Commons License</option>
+    </select>
+    <br><br>
+    <label for="file">Upload File:</label>
+    <input type="file">
+    <br><br>
+    <input class="submit" type="submit" required>
+
+  </form>
+</body>
+</html>
